@@ -11,7 +11,7 @@
 <body>
     <main>
         <section class="primeira">
-            <input type="text" placeholder="Digite seu texto">
+            <input id="input" type="text" placeholder="Digite seu texto">
             <section class="sessao-botao">
                 <figure>
                     <img class="ponto-exclamacao" src="./assents/exclamation-mark-svgrepo-com.svg" alt="Ponto de exclamação">
@@ -19,17 +19,20 @@
                 </figure>
 
                 <div>
-                    <button class="criptografar">Criptografar</button>
-                    <button class="descriptografar">Descriptografar</button>
+                    <button class="criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="descriptografar" onclick="descriptografar()">Descriptografar</button>
                 </div>
             </section>
         </section>
 
         <section class="segunda">
-            <input id="texto" type="text">
-            <button class="btn-copiar" onclick="copytext()">Copiar</button>
-
+            <section id="out-input">
+                <img class="letter" src="./assents/carta-fechada.svg" alt="personagem deadpool">
+                <h3>Sua mensagem vai aparecer aqui</h3>
+                <p> Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </section>
         </section>
+        
     </main>
     <footer>
         <h2>Desenvolvido por Mhennadhy</h2>
