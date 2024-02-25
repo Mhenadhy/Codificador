@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --botao-background: transparent;
+}
+
+body {
+    background-image: linear-gradient(to top left,#1B1A55,#535C91,#9290C3);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+}
+
+.primeira {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    height: 70vh;
+}
+
+input {
+    text-align: center;
+    background-color: transparent;
+    border: solid 0.5rem #fff;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+    width: 40vw;
+    height: 30vh;
+}
+
+
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    color: black;
+    padding-left: 1rem;
+    width: 100%;
+    height: 10vh;
+}
+
+.ponto-exclamacao {
+    width: 2vw;
+}
+figcaption{
+    color: #fff;
+}
+
+.sessao-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 35vh;
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.criptografar, .descriptografar {
+    width: 18vw;
+    height: 10vh;
+    border-radius: 1rem;
+    border: solid 1px;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: transparent;
+}
+
+.criptografar:hover, .descriptografar:hover {
+    box-shadow: 0 0 1rem #fff, inset 0 0 2.5rem #070F2B;
+    text-shadow: 0 0 2rem #ffff;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #000;
+}
+.segunda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 50vw;
+    height: 70vh;
+}
+#texto{
+    width: 20vw;
+    height: 55vh;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: transparent;
+    border: solid 0.5rem #fff;
+}
+.btn-copiar{
+    width: 18vw;
+    height: 10vh;
+    border-radius: 1rem;
+    border: solid 1px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: #fff;
+}
+.btn-copiar:hover{
+    box-shadow: 0 0 1rem #fff, inset 0 0 2.5rem #070F2B;
+    text-shadow: 0 0 2rem #ffff;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #000;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    color: #fff;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 20vw;
+    height: 10vh;
+}
+
+li, img{
+    width: 3vw;
+}
+
+@media(max-width:768px){
+    body{
+        height: 160vh;
+    }
+    main{
+        flex-direction: column;
+    }
+    .primeira{
+        height: 80vh;
+        width: 100%;
+    }
+    input{
+        width: 70vw;
+        height: 60vh;
+    }
+    .sessao-botao{
+        justify-content: space-evenly;
+        width: 80vw;
+    }
+    .criptografar, .descriptografar{
+        width: 25vw;
+    }
+    #texto{
+        width: 80vw;
+        height: 20vh;
+    }
+    .btn-copiar{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}
