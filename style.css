@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --botao-background: transparent;
 }
 
 body {
-    background-image: linear-gradient(to top left,#1B1A55,#535C91,#9290C3);
+    background-image: linear-gradient(to top left, #1B1A55, #535C91, #9290C3);
     height: 100vh;
 }
 
@@ -29,6 +30,9 @@ main {
     justify-content: space-around;
     width: 50vw;
     height: 70vh;
+}
+.primeira div{
+    flex-wrap: wrap;
 }
 
 input {
@@ -59,7 +63,8 @@ figure {
 .ponto-exclamacao {
     width: 2vw;
 }
-figcaption{
+
+figcaption {
     color: #fff;
 }
 
@@ -78,7 +83,8 @@ div {
     width: 100%;
 }
 
-.criptografar, .descriptografar {
+.criptografar,
+.descriptografar {
     width: 18vw;
     height: 10vh;
     border-radius: 1rem;
@@ -88,13 +94,15 @@ div {
     background-color: transparent;
 }
 
-.criptografar:hover, .descriptografar:hover {
+.criptografar:hover,
+.descriptografar:hover {
     box-shadow: 0 0 1rem #fff, inset 0 0 2.5rem #070F2B;
     text-shadow: 0 0 2rem #ffff;
     transition: all 0.5s;
     cursor: pointer;
     color: #000;
 }
+
 .segunda {
     display: flex;
     flex-direction: column;
@@ -104,7 +112,8 @@ div {
     width: 50vw;
     height: 70vh;
 }
-#out-input{
+
+#out-input {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,17 +128,21 @@ div {
     border-radius: 1rem;
     text-align: center;
 }
-.letter{
+
+.letter {
     width: 10vw;
 }
-#out-input h3{
+
+#out-input h3 {
     font-size: 1.3rem;
 }
-#out-input p{
+
+#out-input p {
     font-size: 1rem;
     opacity: 0.5;
 }
-.btn-copiar{
+
+.btn-copiar {
     width: 18vw;
     height: 10vh;
     border-radius: 1rem;
@@ -138,14 +151,16 @@ div {
     background-color: transparent;
     color: #fff;
 }
-.btn-copiar:hover{
+
+.btn-copiar:hover {
     box-shadow: 0 0 1rem #fff, inset 0 0 2.5rem #070F2B;
     text-shadow: 0 0 2rem #ffff;
     transition: all 0.5s;
     cursor: pointer;
     color: #000;
 }
-footer{
+
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +169,8 @@ footer{
     height: 20vh;
     color: #fff;
 }
-ul{
+
+ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,50 +180,109 @@ ul{
     height: 10vh;
 }
 
-li, img{
+li,
+img {
     width: 3vw;
 }
 
-@media(max-width:768px){
-    body{
+footer img:hover {
+    background-color: #9290C3;
+    border-radius: 1.2rem;
+    border: solid 0.3rem rgb(21, 235, 21);
+    width: 3.5vw;
+    transition: all 0.5s;
+
+}
+
+@media(max-width:768px) {
+    body {
         height: 130vh;
     }
-    main{
+
+    main {
         flex-direction: column;
         height: 120vh;
     }
-    .primeira{
+
+    .primeira {
         height: 80vh;
         width: 100%;
     }
-    input{
+
+    input {
         width: 70vw;
         height: 60vh;
     }
-    .sessao-botao{
+
+    .sessao-botao {
         justify-content: space-evenly;
         width: 80vw;
     }
-    .criptografar, .descriptografar{
+
+    .criptografar,
+    .descriptografar {
         width: 25vw;
     }
-    .segunda{
+
+    .segunda {
         width: 100%;
         height: 100%;
     }
-    #texto{
+
+    #texto {
         width: 80vw;
         height: 25vh;
     }
-    .btn-copiar{
+
+    .btn-copiar {
         width: 80vw;
         height: 10vh;
     }
-    footer{
+
+    footer {
         display: none;
     }
 }
 
-@media(max-width:375px){
+@media(max-width:375px) {
+    body {
+        height: 120vh;
+    }
 
+    .primeira {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .sessao-botao {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .criptografar,
+    .descriptografar {
+        width: 30vh;
+    }
+
+    .segunda {
+        width: 100%;
+        height: 40vh;
+    }
+
+    #out-input {
+        width: 100%;
+        height: 34vh;
+        border: solid 0.3rem;
+    }
+    .btn-copiar{
+        height: 8vh;
+    }
+
+    .letter {
+        width: 13vh;
+    }
 }
