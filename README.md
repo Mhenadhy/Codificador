@@ -4,6 +4,6 @@
 
 <h1>Ferramentas utilizadas</h1>
 
-<img width="2rem" src="./assents/HTML.svg" alt="logo do HTML">
-<img width="2rem" src="./assents/CSS.svg" alt="Logo do CSS">
-<img width="2rem" src="./assents/JS.svg" alt="Logo do javascript">
+<img width="3%" src="./assents/HTML.svg" alt="logo do HTML">
+<img width="3%" src="./assents/CSS.svg" alt="Logo do CSS">
+<img width="3%" src="./assents/JS.svg" alt="Logo do javascript">
